@@ -2,16 +2,24 @@ body {
     background-color: beige;
 }
 
-.navbar ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.navbar li {
+nav li {
     display: inline;
 }
 
-.navbar li a {
+nav li a {
     padding: 8px;
+}
+
+section {
+    background-color: grey;
+}
+
+footer {
+    background-color: purple;
 }
