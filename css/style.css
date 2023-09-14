@@ -1,5 +1,9 @@
 body {
-    background-color: beige;
+    background-color: whitesmoke;
+}
+
+header {
+    max-height: 200px;
 }
 
 nav ul {
@@ -11,7 +15,12 @@ nav ul {
 
 nav li {
     display: inline;
-    padding: 30px;
+    padding: 50px;
+}
+
+nav li img {
+    max-height: 30px;
+    max-width: 30px;
 }
 
 nav li a {
@@ -20,8 +29,12 @@ nav li a {
     font-size: 20px;
 }
 
+nav li a:hover {
+    text-decoration: underline;
+}
+
 figure {
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 figure img {
@@ -33,6 +46,27 @@ section {
     background-color: grey;
 }
 
+.introductory-text h1, p {
+    font-size: 20px;
+}
+
+.introductory-text h1 {
+    color: purple;
+}
+
 footer {
     background-color: purple;
+}
+
+.slideshow-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slideshow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
