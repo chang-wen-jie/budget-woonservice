@@ -3,6 +3,7 @@ body {
 }
 
 nav ul {
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -10,10 +11,22 @@ nav ul {
 
 nav li {
     display: inline;
+    padding: 30px;
 }
 
 nav li a {
-    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+figure {
+    background-color: grey;
+}
+
+figure img {
+    display: block;
+    margin: auto;
 }
 
 section {
