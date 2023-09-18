@@ -1,72 +1,90 @@
+:root {
+    --gray-primary: #CDCDCD;
+    --gray-secondary: #F3F3F3;
+    --purple: #410D4C;
+}
+
 body {
-    background-color: whitesmoke;
+    background-color: #FAFAFA;
 }
 
 header {
     max-height: 200px;
 }
 
-nav ul {
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav {
+    ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        padding: 50px;
+    
+        img {
+            max-height: 30px;
+            max-width: 30px; 
+        }
+    
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
-nav li {
-    display: inline;
-    padding: 50px;
-}
 
-nav li img {
-    max-height: 30px;
-    max-width: 30px;
-}
-
-nav li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-nav li a:hover {
-    text-decoration: underline;
-}
 
 figure {
-    background-color: lightgrey;
-}
+    background-color: var(--gray-primary);
 
-figure img {
-    display: block;
-    margin: auto;
+    img {
+        display: block;
+        margin: auto; 
+    }
 }
 
 section {
-    background-color: grey;
+    background-color: var(--gray-secondary);
 }
 
-.introductory-text h1, p {
-    font-size: 20px;
-}
+.introductory-text {
+    max-width: 500px;
 
-.introductory-text h1 {
-    color: purple;
+    p, h1 {
+        font-size: 20px;;
+    }
+
+    h1 {
+        color: purple;
+    }
 }
 
 footer {
-    background-color: purple;
+    background-color: var(--purple);
 }
 
 .slideshow-container {
     position: relative;
     text-align: center;
-    color: white;
 }
 
-.slideshow-text {
+.slideshow-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    a {
+        color: white;
+        font-size: 24px;
+    }
 }
