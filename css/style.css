@@ -4,15 +4,22 @@
     --purple: #410D4C;
 }
 
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
 body {
-    background-color: #FAFAFA;
+    background-color: #FFFF;
+    font-family: OpenSans-Regular;
 }
 
 header {
-    max-height: 200px;
+    height: 75px;
 }
 
 nav {
+    margin-top: 25px;
     ul {
         text-align: center;
         list-style: none;
@@ -23,53 +30,27 @@ nav {
     li {
         display: inline;
         padding: 50px;
-    
         img {
             max-height: 30px;
             max-width: 30px; 
         }
-    
         a {
             text-decoration: none;
             color: black;
             font-size: 20px;
         }
-    
         :hover {
             text-decoration: underline;
         }
     }
 }
 
-
-
 figure {
     background-color: var(--gray-primary);
-
     img {
         display: block;
         margin: auto; 
     }
-}
-
-section {
-    background-color: var(--gray-secondary);
-}
-
-.introductory-text {
-    max-width: 500px;
-
-    p, h1 {
-        font-size: 20px;;
-    }
-
-    h1 {
-        color: purple;
-    }
-}
-
-footer {
-    background-color: var(--purple);
 }
 
 .slideshow-container {
@@ -82,9 +63,33 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     a {
         color: white;
         font-size: 24px;
     }
+}
+
+section {
+    margin-top: 50px;
+    background-color: var(--gray-secondary);
+}
+
+.introductory-text {
+    height: 300px;
+    max-width: 950px;
+    margin: auto;
+    h1 {
+        color: purple;
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;;
+        margin-bottom: 5px;
+    }
+}
+
+footer {
+    background-color: var(--purple);
+    height: 250px;
+    max-height: 250px;
 }
