@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Home - Budget WoonService Studentrooms</title>
   </head>
   <body>
@@ -13,80 +13,249 @@
       <nav>
         <ul>
           <li>
-            <img src="images/navbar/house.png" alt="House Icon">
+            <img src="images/navbar/house.png" alt="House Icon" />
             <a href="pages/listings.html">Aanbod</a>
           </li>
           <li>
-            <img src="images/navbar/user.png" alt="User Icon">
+            <img src="images/navbar/user.png" alt="User Icon" />
             <a href="pages/login.html">Inloggen of Inschrijven</a>
           </li>
           <li>
-            <img src="images/navbar/information.png" alt="Information Icon">
+            <img src="images/navbar/information.png" alt="Information Icon" />
             <a href="pages/about.html">Hoe werkt het?</a>
           </li>
           <li>
-            <img src="images/navbar/mail.png" alt="Mail Icon">
+            <img src="images/navbar/mail.png" alt="Mail Icon" />
             <a href="pages/contact.html">Contact</a>
           </li>
-          <li>
-            <a href="index.html"><img src="images/logo.png" alt="WoonService Logo"></a>
-          </li>
-        </ul>
-        <div class="dropdown">
-          <span>Selecteer een taal</span>
-          <div class="dropdown-content">
-            <p>Hello World!</p>
+          <div class="dropdown">
+            <span>Selecteer een taal</span>
+            <div class="dropdown-content">
+              <p>Chinees</p>
+              <p>Engels</p>
+              <p>Maleisisch</p>
+              <p>Nederlands</p>
+              <p>Pools</p>
+            </div>
           </div>
-        </div>
+        </ul>
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="WoonService Logo"
+        /></a>
       </nav>
     </header>
 
     <main>
-      <article>
-        <figure>
-          <div class="slideshow-container">
-            <div class="slideshow-text-container">
-              <h1>
-                StudentsRoomsBrabant
-              </h1>
-              <p>
-                Onderdeel van WoonService Regionaal
-              </p>
-            </div>
+      <section class="slideshow">
+        <figure class="slideshow-container">
+          <div class="slideshow-text-container">
+            <h1>StudentsRoomsBrabant</h1>
+            <p>Onderdeel van WoonService Regionaal</p>
           </div>
         </figure>
-      </article>
+      </section>
 
-      <section>
+      <article>
         <div class="introductory-text">
-          <h1>
-            Huisvesting voor (internationale) studenten
-          </h1>
+          <h2>Huisvesting voor (internationale) studenten</h2>
           <p>
-            Ben je een Nederlandse of internationale student, studeer je aan een onderwijsinstelling in ‘s-Hertogenbosch en ben je op zoek naar een huur-studentenwoning in de regio Brabant?
+            Ben je een Nederlandse of internationale student, studeer je aan een
+            onderwijsinstelling in ‘s-Hertogenbosch en ben je op zoek naar een
+            huur-studentenwoning in de regio Brabant?
           </p>
           <p>
-            Op www.studentroomsbrabant.com vind je het actuele aanbod met betrekking tot huur-studentenwoningen van de aangesloten regionale woningcorporaties.
+            Op www.studentroomsbrabant.com vind je het actuele aanbod met
+            betrekking tot huur-studentenwoningen van de aangesloten regionale
+            woningcorporaties.
           </p>
           <p>
-            Naast het studentenwoningaanbod bevat deze website relevante informatie om jouw zoektocht naar een studentenwoning zo makkelijk mogelijk te maken.
+            Naast het studentenwoningaanbod bevat deze website relevante
+            informatie om jouw zoektocht naar een studentenwoning zo makkelijk
+            mogelijk te maken.
           </p>
           <p>
-            Dagelijks vind je hier nieuw aanbod van huur studentenwoningen. Maak gebruik van deze website om zo jouw ideale studentenwoning te vinden. 
+            Dagelijks vind je hier nieuw aanbod van huur studentenwoningen. Maak
+            gebruik van deze website om zo jouw ideale studentenwoning te
+            vinden.
           </p>
         </div>
-      </section>
+      </article>
     </main>
-    
+
+    <section>
+      <div class="slider-header">
+        <h1>Wat is uw budget?</h1>
+        <div class="currency-converter">
+          <a href="#currency">
+            €
+          </a>
+        </div>
+      </div>
+      <figure class="slider-container">
+        <div class="slider-title">
+          <h2>Kale huurprijs</h2>
+        </div>
+        <div class="slider">
+          <input type="range"
+                 min="0"
+                 max="1200"
+                 value="1200"       
+                 oninput="rangeValue.innerText = '€ ' + this.value + ',-'"
+          >
+        </div> 
+        <div class="value-indicator">
+          <p class="min-value">
+            € 0,-
+          </p>
+          <p id="rangeValue" class="max-value">
+            € 1200,-
+          </p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="listing-container">
+      <figure class="listing-bubble">
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+            alt="Studentenwoning Onderwijsboulevard"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>Onderwijsboulevard 161 B<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+              <p>Studentenwoning (15m²)</p>
+            </div>
+            <div class="listing-pricing">
+              <img src="images/navbar/clock.png" alt="Listing Countdown">
+              <div class="listing-price">
+                <h2>€ 264,21</h2>
+                <p>Huur - Loting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_de_fuik.jpg"
+            alt="Studentenwoning De Fuik"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>De Fuik 14<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+            <p>Studentenwoning (21m²)</p>
+            </div>
+            <div class="listing-pricing">
+              <img src="images/navbar/clock.png" alt="Listing Countdown">
+              <div class="listing-price">
+                <h2>€ 439,85</h2>
+                <p>Huur - Loting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_de_fuik.jpg"
+            alt="Studentenwoning De Fuik"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>De Fuik 15<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+              <p>Studentenwoning (21m²)</p>
+              </div>
+              <div class="listing-pricing">
+                <img src="images/navbar/clock.png" alt="Listing Countdown">
+                <div class="listing-price">
+                  <h2>€ 439,85</h2>
+                  <p>Huur - Loting</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+            alt="Studentenwoning Onderwijsboulevard"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>Onderwijsboulevard 111 X<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+              <p>Studentenwoning (15m²)</p>
+            </div>
+            <div class="listing-pricing">
+              <img src="images/navbar/clock.png" alt="Listing Countdown">
+              <div class="listing-price">
+                <h2>€ 264,21</h2>
+                <p>Huur - Loting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+            alt="Studentenwoning Onderwijsboulevard"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>Onderwijsboulevard 158 A<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+              <p>Studentenwoning (15m²)</p>
+            </div>
+            <div class="listing-pricing">
+              <img src="images/navbar/clock.png" alt="Listing Countdown">
+              <div class="listing-price">
+                <h2>€ 264,21</h2>
+                <p>Huur - Loting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="images/listing/studentenwoning_wethouder_schuurmanslaan.jpg"
+            alt="Studentenwoning Wethouder Schuurmanslaan"
+          />
+          <div class="listing-info">
+            <div class="listing-location">
+              <h2>Wethouder Schuurmanslaan 505 F<br>'s-Hertogenbosch</h2>
+            </div>
+            <div class="listing-dimensions">
+              <p>Studentenwoning (15m²)</p>
+            </div>
+            <div class="listing-pricing">
+              <img src="images/navbar/clock.png" alt="Listing Countdown">
+              <div class="listing-price">
+                <h2>€ 264,21</h2>
+                <p>Huur - Loting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </section>
+
     <footer>
-      <ul>
-        <li>
-          <a>Disclaimer</a>
-        </li>
-        <li>
-          <a>Alegemene Verantwoording</a>
-        </li>
-      </ul>
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a>Disclaimer</a>
+          </li>
+          <li>
+            <a>Alegemene Verantwoording</a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
