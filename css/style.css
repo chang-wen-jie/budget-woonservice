@@ -222,6 +222,7 @@ article {
 
 .listing-container {
   margin-bottom: 50px;
+  max-width: 970px;
 
   .listing-bubble {
     margin: auto;
