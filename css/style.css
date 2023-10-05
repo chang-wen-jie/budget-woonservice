@@ -221,16 +221,16 @@ article {
 }
 
 .listing-container {
-  margin-bottom: 50px;
+  margin: auto;
   max-width: 970px;
+  margin-bottom: 50px;
+
 
   .listing-bubble {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 30px;
-    width: 970px;
 
     .listing {
       background-color: var(--gray-secondary);
