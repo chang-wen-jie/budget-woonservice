@@ -50,30 +50,80 @@
     </header>
 
     <main>
-        <article>
-            <div class="article-title">
+        <article class="title-container">
+            <div class="title">
                 <h1>Inloggen of inschrijven</h1>
             </div>
         </article>
 
-      <div>
-        <label class="container">
-            Gebruikersnaam
-            <input type="text" name="" />
-        </label>
+      <section class="form-container">
+        <figure class="login-card">
+          <div class="card-title">
+            <h2>Inloggen</h2>
+          </div>
 
-        <label class="container">
-            Wachtwoord
-            <input type="password" name="" />
-        </label>
-
-        <label class="container">
-          <input type="checkbox" />
-          Ingelogd blijven
-        </label>
-        
-        <input type="submit" value="Submit" />
-      </div>
+          <div class="login-form">
+            <label class="container">
+              Gebruikersnaam
+              <input type="text" name="" />
+            </label>
+  
+            <label class="container">
+                Wachtwoord
+                <input type="password" name="" />
+            </label>
+  
+            <label class="container">
+              <input type="checkbox" />
+              Ingelogd blijven
+            </label>
+            
+            <input type="submit" value="Submit" />
+          </div>
+        </figure>
+      </section>
     </main>
+
+    <footer class="main-footer">
+      <div class="footer-block-group">
+        <div class="footer-block">
+          <a class="footer-block-title" href="index.html">Aanbod</a>
+          <ul>
+            <li>
+              <a href="#listing-container">Bekijk het aanbod</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <a class="footer-block-title" href="pages/about.html"
+            >Hoe werkt het?</a
+          >
+        </div>
+
+        <div class="footer-block">
+          <a class="footer-block-title" href="pages/login.html"
+            >Mijn WoonService</a
+          >
+          <ul>
+            <li>
+              <a href="pages/login.html">Mijn account</a>
+            </li>
+            <li>
+              <a href="pages/login.html">Mijn reacties</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <a class="footer-block-title" href="pages/about.html">Over ons</a>
+          <ul>
+            <li>
+              <a href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

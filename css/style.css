@@ -3,6 +3,7 @@
   --gray-secondary: #f3f3f3;
   --purple-primary: #d81159;
   --purple-secondary: #410d4c;
+  --blue-primary: #aae1ff;
 }
 
 @font-face {
@@ -316,13 +317,48 @@ article {
 }
 /* End index.html styling */
 
-
 /* Start login.html styling */
-article {
-  .article-title {
+.title-container {
+  margin: auto;
+  margin-top: 30px;
+  background-color: red;
+  width: 970px;
+
+  .title {
     > h1 {
       color: var(--purple-secondary);
-      font-size: 36px;
+      font-size: 46px;
+      font-weight: bold;
+    }
+  }
+}
+
+.form-container {
+  margin: auto;
+  background-color: purple;
+  width: 970px;
+
+  .login-card {
+    background-color: yellow;
+    max-width: 450px;
+
+    .card-title {
+      background-color: var(--blue-primary);
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+
+      > h2 {
+        color: var(--purple-secondary);
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .login-form {
+      height: 500px;
     }
   }
 }
