@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" name="">
-    <input type="password" name="">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <ul>
+          <li>
+            <img src="../images/navbar/house.png" alt="House Icon" />
+            <a href="../index.html">Aanbod</a>
+          </li>
+          <li>
+            <img src="../images/navbar/user.png" alt="User Icon" />
+            <a href="../pages/login.html">Inloggen of Inschrijven</a>
+          </li>
+          <li>
+            <img
+              src="../images/navbar/information.png"
+              alt="Information Icon"
+            />
+            <a href="../pages/about.html">Hoe werkt het?</a>
+          </li>
+          <li>
+            <img src="../images/navbar/mail.png" alt="Mail Icon" />
+            <a href="../pages/contact.html">Contact</a>
+          </li>
 
-    <input type="submit" value="Submit">
-</body>
+          <div class="dropdown">
+            <span>Selecteer een taal</span>
+            <div class="dropdown-content">
+              <p>Chinees</p>
+              <p>Engels</p>
+              <p>Maleisisch</p>
+              <p>Nederlands</p>
+              <p>Pools</p>
+            </div>
+          </div>
+        </ul>
+
+        <a class="logo" href="../index.html">
+          <img src="../images/logo.png" alt="WoonService Logo"
+        /></a>
+      </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-title">
+                <h1>Inloggen of inschrijven</h1>
+            </div>
+        </article>
+
+      <div>
+        <label class="container">
+            Gebruikersnaam
+            <input type="text" name="" />
+        </label>
+
+        <label class="container">
+            Wachtwoord
+            <input type="password" name="" />
+        </label>
+
+        <label class="container">
+          <input type="checkbox" />
+          Ingelogd blijven
+        </label>
+        
+        <input type="submit" value="Submit" />
+      </div>
+    </main>
+  </body>
 </html>

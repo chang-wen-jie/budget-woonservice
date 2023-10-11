@@ -16,12 +16,12 @@ body {
 }
 
 .main-header {
-  margin: auto;
   max-height: 110px;
-  max-width: 970px;
   justify-content: space-between;
+  border-bottom: var(--gray-primary) 1px solid;
 
   > nav {
+    margin: auto;
     display: flex;
     width: 970px;
   
@@ -90,6 +90,43 @@ body {
   }
 }
 
+.main-footer {
+  background-color: var(--purple-secondary);
+  height: 350px;
+  color: white;
+
+  .footer-block-group {
+    background-color: green;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 175px;
+    width: 970px;
+
+    .footer-block {
+      background-color: red;
+      margin-top: 50px;
+      max-width: fit-content;
+
+        .footer-block-title {
+          color: white;
+          font-size: 22px;
+          text-decoration: none;
+        }
+
+      > ul {
+        margin-top: 10px;
+
+        > li a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* Start index.html styling */
 .slideshow {
   background-color: var(--gray-primary);
   max-height: 300px;
@@ -99,9 +136,7 @@ body {
     margin: auto;
     background-image: url('../images/slideshow/paleisbrug.jpg');
     background-repeat: no-repeat;
-    height: 300px;
     width: 1300px;
-    color: white;
 
     .slideshow-text-container {
       margin: auto;
@@ -110,11 +145,13 @@ body {
       line-height: 40px;
 
       > h1 {
+        color: white;
         font-size: 42px;
         font-weight: bold;
       }
 
       > p {
+        color: white;
         font-size: 22px;
         font-weight: bold;
       }
@@ -222,98 +259,81 @@ article {
 
 .listing-container {
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 970px;
   margin-bottom: 50px;
+  row-gap: 30px;
+  column-gap: 30px;
 
+  .listing {
+    background-color: var(--gray-secondary);
+    height: 460px;
+    max-width: 220px;
 
-  .listing-bubble {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 30px;
+    .listing-info {
+      padding: 15px;
 
-    .listing {
-      background-color: var(--gray-secondary);
-      height: 460px;
-      max-width: 220px;
+      .listing-location {
+        white-space: nowrap;
 
-      .listing-info {
-        padding: 15px;
+        > h2 {
+          max-height: 100px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 16px;
+        }
+      }
 
-        .listing-location {
-          white-space: nowrap;
+      .listing-dimensions {
+        padding-top: 30px;
+        padding-bottom: 75px;
+        font-size: 14px;
+      }
 
+      .listing-pricing {
+        display: flex;
+        justify-content: space-between;
+
+        > img {
+          max-height: 30px;
+          max-width: 30px;
+        }
+
+        .listing-price {
           > h2 {
-            max-height: 100px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            font-size: 16px;
-          }
-        }
-
-        .listing-dimensions {
-          padding-top: 30px;
-          padding-bottom: 75px;
-          font-size: 14px;
-        }
-
-        .listing-pricing {
-          display: flex;
-          justify-content: space-between;
-
-          > img {
-            max-height: 30px;
-            max-width: 30px;
+            color: var(--purple-primary);
+            font-size: 20px;
           }
 
-          .listing-price {
-            > h2 {
-              color: var(--purple-primary);
-              font-size: 20px;
-            }
-  
-            > p {
-              font-size: 13px;
-            }
+          > p {
+            font-size: 13px;
           }
         }
       }
     }
   }
 }
+/* End index.html styling */
 
-.main-footer {
-  background-color: var(--purple-secondary);
-  height: 350px;
-  color: white;
 
-  .footer-block-group {
-    background-color: green;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    height: 175px;
-    width: 970px;
-
-    .footer-block {
-      background-color: red;
-      margin-top: 50px;
-      max-width: fit-content;
-
-        .footer-block-title {
-          color: white;
-          font-size: 22px;
-          text-decoration: none;
-        }
-
-      > ul {
-        margin-top: 10px;
-
-        > li a {
-          color: white;
-          text-decoration: none;
-        }
-      }
+/* Start login.html styling */
+article {
+  .article-title {
+    > h1 {
+      color: var(--purple-secondary);
+      font-size: 36px;
     }
   }
 }
+/* End login.html stylings */
+
+
+/* Start about.html styling */
+
+/* End about.html styling */
+
+
+/* Start contact.html styling */
+
+/* End contact.html styling */
