@@ -93,21 +93,20 @@ body {
 
 .main-footer {
   background-color: var(--purple-secondary);
-  height: 350px;
-  color: white;
+  height: 250px;
 
   .footer-block-group {
-    background-color: green;
     margin: auto;
     display: flex;
     justify-content: space-between;
     height: 175px;
     width: 970px;
+    border-bottom: 1px solid white;
 
     .footer-block {
-      background-color: red;
       margin-top: 50px;
       max-width: fit-content;
+      color: white;
 
         .footer-block-title {
           color: white;
@@ -321,7 +320,6 @@ article {
 .title-container {
   margin: auto;
   margin-top: 30px;
-  background-color: red;
   width: 970px;
 
   .title {
@@ -335,20 +333,23 @@ article {
 
 .form-container {
   margin: auto;
+  margin-bottom: 50px;
   background-color: purple;
   width: 970px;
 
   .login-card {
-    background-color: yellow;
-    max-width: 450px;
+    background-color: var(--gray-secondary);
+    max-width: 465px;
+    border-radius: 6px 6px 0 0;
 
-    .card-title {
+    .login-card-header {
       background-color: var(--blue-primary);
       margin-top: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 50px;
+      border-radius: 6px 6px 0 0;
 
       > h2 {
         color: var(--purple-secondary);
@@ -357,8 +358,64 @@ article {
       }
     }
 
-    .login-form {
+    .login-form-container {
       height: 500px;
+      padding: 20px;
+
+      > img {
+        text-align: center;
+        max-height: 30px;
+        max-width: 30px;
+      }
+
+      .login-form-desciption {
+        margin-top: 30px;
+
+        > h3 {
+          font-weight: bold;
+        }
+
+        > p {
+          margin-bottom: 20px;
+        }
+      }
+
+      .login-form {
+
+        .username-field-container {
+          display: flex;
+          justify-content: space-around;
+
+          > input {
+            height: 25px;
+          }
+        }
+
+        .password-field-container {
+          > input {
+            height: 25px;
+          }
+        }
+
+        .submit-container {
+          margin-top: 15px;
+
+          > input {
+            background-color: var(--purple-primary);
+            color: white;
+            height: 40px;
+            width: 125px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+          }
+
+          > input:hover {
+            cursor: pointer;
+            color: var(--gray-primary);
+          }
+        }
+      }
     }
   }
 }

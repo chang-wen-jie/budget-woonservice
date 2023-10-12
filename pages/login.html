@@ -58,27 +58,47 @@
 
       <section class="form-container">
         <figure class="login-card">
-          <div class="card-title">
+          <div class="login-card-header">
             <h2>Inloggen</h2>
           </div>
 
-          <div class="login-form">
-            <label class="container">
-              Gebruikersnaam
-              <input type="text" name="" />
-            </label>
-  
-            <label class="container">
-                Wachtwoord
-                <input type="password" name="" />
-            </label>
-  
-            <label class="container">
-              <input type="checkbox" />
-              Ingelogd blijven
-            </label>
-            
-            <input type="submit" value="Submit" />
+          <div class="login-form-container">
+            <img src="../images/navbar/user.png" alt="User Icon" />
+            <div class="login-form-desciption">
+              <h3>
+                Nog niet eerder ingelogd op StudentRoomsBrabant?
+              </h3>
+              <p>
+                Volg de stappen die je in je StudentRoomsBrabant-bericht hebt gekregen. 
+              </p>
+              <h3>
+                Al eerder ingelogd op StudentRoomsBrabant?
+              </h3>
+              <p>
+                Log dan in met de door jou aangemaakte gebruikersnaam en wachtwoord. 
+              </p>
+            </div>
+
+            <div class="login-form">
+              <div>
+                <div class="username-field-container">
+                  <label for="username">Gebruikersnaam</label>
+                  <input type="text" id="username" />
+                </div>
+                
+                <div class="password-field-container">
+                  <label for="password">Wachtwoord</label>
+                  <input type="password" id="password" />
+                </div>
+              </div>
+
+                <label for="remember-me">Ingelogd blijven</label>
+                <input type="checkbox" id="remember-me" />
+
+              <div class="submit-container">
+                <input type="submit" value="Inloggen" />
+              </div>
+            </div>
           </div>
         </figure>
       </section>
