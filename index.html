@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Budget WoonService Studentrooms</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Home - Budget WoonService Studentrooms</title>
   </head>
 
   <body>
     <header class="main-header">
-      <nav>
-        <ul>
+      <nav class="main-navbar">
+        <ul class="navigation-menu">
           <li>
-            <img src="images/navbar/house.png" alt="House Icon" />
+            <img src="images/icon/house.png" alt="House Icon" />
             <a href="index.html">Aanbod</a>
           </li>
           <li>
-            <img src="images/navbar/user.png" alt="User Icon" />
+            <img src="images/icon/user.png" alt="User Icon" />
             <a href="pages/login.html">Inloggen of Inschrijven</a>
           </li>
           <li>
-            <img src="images/navbar/information.png" alt="Information Icon" />
+            <img src="images/icon/information.png" alt="Information Icon" />
             <a href="pages/about.html">Hoe werkt het?</a>
           </li>
           <li>
-            <img src="images/navbar/mail.png" alt="Mail Icon" />
+            <img src="images/icon/mail.png" alt="Mail Icon" />
             <a href="pages/contact.html">Contact</a>
           </li>
 
@@ -35,7 +36,6 @@
             <div class="dropdown-content">
               <p>Chinees</p>
               <p>Engels</p>
-              <p>Maleisisch</p>
               <p>Nederlands</p>
               <p>Pools</p>
             </div>
@@ -46,24 +46,63 @@
           <img src="images/logo.png" alt="WoonService Logo"
         /></a>
       </nav>
+
+      <nav class="secondary-navbar">
+        <ul class="navigation-container">
+          <li class="parent">
+            <div class="hamburger-menu">
+              <h1>☰</h1>
+            </div>
+            <ul class="child">
+              <li>
+                <a href="pages/login.html"> Inloggen </a>
+              </li>
+              <li>
+                <a href="pages/about.html"> Over ons </a>
+              </li>
+              <li>
+                <a href="pages/contact.html"> Contact </a>
+              </li>
+              <li class="parent">
+                <a href="#"> Studentenwoningen ▼ </a>
+                <ul class="child">
+                  <li class="parent">
+                    <a href="#"> Regio ▼ </a>
+                    <ul class="child">
+                      <li><a href="#listing-container">'s-Hertogenbosch</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="navbar-title">
+          <h1>Aanbod</h1>
+          <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="WoonService Logo"
+          /></a>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="slideshow">
-        <figure class="slideshow-container">
-          <div class="slideshow-text-container">
+      <section class="slideshow-container">
+        <figure class="slideshow-image">
+          <div class="slideshow-text">
             <h1>StudentsRoomsBrabant</h1>
             <p>Onderdeel van WoonService Regionaal</p>
           </div>
         </figure>
       </section>
 
-      <article>
+      <article class="description">
         <div class="introductory-text">
           <h2>Huisvesting voor (internationale) studenten</h2>
           <p>
             Ben je een Nederlandse of internationale student, studeer je aan een
-            onderwijsinstelling in ‘s-Hertogenbosch en ben je op zoek naar een
+            onderwijsinstelling in 's-Hertogenbosch en ben je op zoek naar een
             huur-studentenwoning in de regio Brabant?
           </p>
           <p>
@@ -85,14 +124,14 @@
       </article>
 
       <section>
-        <figure class="slider-header">
+        <div class="slider-header">
           <h1>Wat is uw budget?</h1>
           <div class="currency-converter">
             <a href="#currency"> € </a>
           </div>
-        </figure>
+        </div>
 
-        <figure class="slider-container">
+        <div class="slider-container">
           <div class="slider-title">
             <h2>Kale huurprijs</h2>
           </div>
@@ -110,141 +149,153 @@
             <p class="min-value">€ 0,-</p>
             <p id="rangeValue" class="max-value">€ 1200,-</p>
           </div>
-        </figure>
+        </div>
       </section>
 
       <section>
-        <figure class="listing-container">
+        <figure class="listing-container" id="listing-container">
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_onderwijsboulevard.jpg"
-              alt="Studentenwoning Onderwijsboulevard"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>Onderwijsboulevard 161 B<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (15m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 264,21</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+                alt="Studentenwoning Onderwijsboulevard"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>Onderwijsboulevard 161 B<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (15m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 264,21</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_de_fuik.jpg"
-              alt="Studentenwoning De Fuik"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>De Fuik 14<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (21m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 439,85</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_de_fuik.jpg"
+                alt="Studentenwoning De Fuik"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>De Fuik 14<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (21m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 439,85</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_de_fuik.jpg"
-              alt="Studentenwoning De Fuik"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>De Fuik 15<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (21m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 439,85</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_de_fuik.jpg"
+                alt="Studentenwoning De Fuik"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>De Fuik 15<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (21m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 439,85</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_onderwijsboulevard.jpg"
-              alt="Studentenwoning Onderwijsboulevard"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>Onderwijsboulevard 111 X<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (15m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 264,21</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+                alt="Studentenwoning Onderwijsboulevard"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>Onderwijsboulevard 111 X<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (15m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 264,21</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_onderwijsboulevard.jpg"
-              alt="Studentenwoning Onderwijsboulevard"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>Onderwijsboulevard 158 A<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (15m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 264,21</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_onderwijsboulevard.jpg"
+                alt="Studentenwoning Onderwijsboulevard"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>Onderwijsboulevard 158 A<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (15m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 264,21</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="listing">
-            <img
-              src="images/listing/studentenwoning_wethouder_schuurmanslaan.jpg"
-              alt="Studentenwoning Wethouder Schuurmanslaan"
-            />
-            <div class="listing-info">
-              <div class="listing-location">
-                <h2>Wethouder Schuurmanslaan 505 F<br />'s-Hertogenbosch</h2>
-              </div>
-              <div class="listing-dimensions">
-                <p>Studentenwoning (15m²)</p>
-              </div>
-              <div class="listing-pricing">
-                <img src="images/navbar/clock.png" alt="Listing Countdown" />
-                <div class="listing-price">
-                  <h2>€ 264,21</h2>
-                  <p>Huur - Loting</p>
+            <a href="pages/listing.html">
+              <img
+                src="images/listing/studentenwoning_wethouder_schuurmanslaan.jpg"
+                alt="Studentenwoning Wethouder Schuurmanslaan"
+              />
+              <div class="listing-info">
+                <div class="listing-location">
+                  <h2>Wethouder Schuurmanslaan 505 F<br />'s-Hertogenbosch</h2>
+                </div>
+                <div class="listing-dimensions">
+                  <p>Studentenwoning (15m²)</p>
+                </div>
+                <div class="listing-pricing">
+                  <img src="images/icon/clock.png" alt="Listing Countdown" />
+                  <div class="listing-price">
+                    <h2>€ 264,21</h2>
+                    <p>Huur - Loting</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </figure>
       </section>

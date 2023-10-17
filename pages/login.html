@@ -3,31 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inloggen of inschrijven - Budget WoonService Studentrooms</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Document</title>
   </head>
+  
   <body>
     <header class="main-header">
-      <nav>
-        <ul>
+      <nav class="main-navbar">
+        <ul class="navigation-menu">
           <li>
-            <img src="../images/navbar/house.png" alt="House Icon" />
+            <img src="../images/icon/house.png" alt="House Icon" />
             <a href="../index.html">Aanbod</a>
           </li>
           <li>
-            <img src="../images/navbar/user.png" alt="User Icon" />
+            <img src="../images/icon/user.png" alt="User Icon" />
             <a href="../pages/login.html">Inloggen of Inschrijven</a>
           </li>
           <li>
-            <img
-              src="../images/navbar/information.png"
-              alt="Information Icon"
-            />
+            <img src="../images/icon/information.png" alt="Information Icon" />
             <a href="../pages/about.html">Hoe werkt het?</a>
           </li>
           <li>
-            <img src="../images/navbar/mail.png" alt="Mail Icon" />
+            <img src="../images/icon/mail.png" alt="Mail Icon" />
             <a href="../pages/contact.html">Contact</a>
           </li>
 
@@ -36,7 +35,6 @@
             <div class="dropdown-content">
               <p>Chinees</p>
               <p>Engels</p>
-              <p>Maleisisch</p>
               <p>Nederlands</p>
               <p>Pools</p>
             </div>
@@ -47,23 +45,79 @@
           <img src="../images/logo.png" alt="WoonService Logo"
         /></a>
       </nav>
+
+      <nav class="secondary-navbar">
+        <ul class="navigation-container">
+          <li class="parent">
+            <div class="hamburger-menu">
+              <h1>☰</h1>
+            </div>
+            <ul class="child">
+              <li>
+                <a href="../pages/login.html">
+                  Inloggen
+                </a>
+              </li>
+              <li>
+                <a href="../pages/about.html">
+                  Over ons
+                </a>
+              </li>
+              <li>
+                <a href="../pages/contact.html">
+                  Contact
+                </a>
+              </li>
+              <li class="parent">
+                <a href="#">
+                  Studentenwoningen ▼
+                </a>
+                <ul class="child">
+                  <li class="parent">
+                    <a href="#">
+                      Regio ▼
+                    </a>
+                    <ul class="child">
+                        <li><a href="../index.html">'s-Hertogenbosch</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="navbar-title">
+          <h1>Account</h1>
+          <a class="logo" href="../index.html">
+            <img src="../images/logo.png" alt="WoonService Logo"
+          /></a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <article class="title-container">
+        <section class="title-container">
             <div class="title">
                 <h1>Inloggen of inschrijven</h1>
             </div>
+        </section>
+
+        <article class="description-container">
+          <p>
+              Je moet ingelogd zijn om te kunnen reageren op de studentenwoningen.<br>
+              Log hieronder in of creëer een account. 
+          </p>
         </article>
 
-      <section class="form-container">
-        <figure class="login-card">
+      <article class="form-container">
+        <div class="login-card">
           <div class="login-card-header">
             <h2>Inloggen</h2>
           </div>
 
           <div class="login-form-container">
-            <img src="../images/navbar/user.png" alt="User Icon" />
+            <img src="../images/icon/user.png" alt="User Icon" />
             <div class="login-form-desciption">
               <h3>
                 Nog niet eerder ingelogd op StudentRoomsBrabant?
@@ -80,66 +134,99 @@
             </div>
 
             <div class="login-form">
-              <div>
-                <div class="username-field-container">
+              <form action="../index.html" method="get">
+                <div class="username-field">
                   <label for="username">Gebruikersnaam</label>
-                  <input type="text" id="username" />
+                  <input type="text" id="username" name="username" required />
                 </div>
                 
-                <div class="password-field-container">
+                <div class="password-field">
                   <label for="password">Wachtwoord</label>
-                  <input type="password" id="password" />
+                  <input type="password" id="password" name="password" required />
+                </div>
+
+                <div class="remember-me-field">
+                  <input type="checkbox" id="remember-me" />
+                  <label for="remember-me">Ingelogd blijven</label>
+                </div>
+
+                <div class="login-button">
+                  <input type="submit" value="Inloggen" />
                 </div>
               </div>
+            </form>
+          </div>
+        </div>
 
-                <label for="remember-me">Ingelogd blijven</label>
-                <input type="checkbox" id="remember-me" />
+        <div class="register-card">
+          <div class="login-card-header">
+            <h2>Inschrijven</h2>
+          </div>
 
-              <div class="submit-container">
-                <input type="submit" value="Inloggen" />
+          <div class="login-form-container">
+            <img src="../images/icon/note.png" alt="Note Taking Icon" />
+            <div class="login-form-desciption">
+              <h3>
+                Ben je nieuw bij StudentRoomsBrabant?
+              </h3>
+              <p>
+                Wil je kunnen reageren op advertenties, je WoonWens bewaren en/of inschrijftijd opbouwen? 
+              </p>
+              <p>
+                Schrijf je dan meteen in: klik op 'Inschrijven' (in het rode blok).
+              </p>
+              <p>
+                Zorg dat u uw e-mailadres en inkomensverklaring van de Belastingdienst bij de hand heeft voor een soepele inschrijving.
+              </p>
+            </div>
+            
+            <form action="../index.html" method="get">
+              <div class="register-button">
+                <input type="submit" value="Inschrijven" />
               </div>
+            </form>
             </div>
           </div>
-        </figure>
-      </section>
+        </div>
+      </article>
     </main>
 
     <footer class="main-footer">
       <div class="footer-block-group">
         <div class="footer-block">
-          <a class="footer-block-title" href="index.html">Aanbod</a>
+          <a class="footer-block-title" href="../index.html">Aanbod</a>
           <ul>
             <li>
-              <a href="#listing-container">Bekijk het aanbod</a>
+              <a href="../index.html">Bekijk het aanbod</a>
             </li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <a class="footer-block-title" href="pages/about.html"
+          <a class="footer-block-title" href="../pages/about.html"
             >Hoe werkt het?</a
           >
         </div>
 
         <div class="footer-block">
-          <a class="footer-block-title" href="pages/login.html"
+          <a class="footer-block-title" href="../pages/login.html"
             >Mijn WoonService</a
           >
           <ul>
             <li>
-              <a href="pages/login.html">Mijn account</a>
+              <a href="../pages/login.html">Mijn account</a>
             </li>
             <li>
-              <a href="pages/login.html">Mijn reacties</a>
+              <a href="../pages/login.html">Mijn reacties</a>
             </li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <a class="footer-block-title" href="pages/about.html">Over ons</a>
+          <a class="footer-block-title" href="../pages/about.html">Over ons</a>
           <ul>
             <li>
-              <a href="pages/contact.html">Contact</a>
+              <a href="../pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
