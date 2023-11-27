@@ -1,4 +1,7 @@
 /* Sart re-occurring elements stylesheet */
+
+@import url(reset.css);
+
 :root {
   --gray-primary: #cdcdcd;
   --gray-secondary: #f3f3f3;
