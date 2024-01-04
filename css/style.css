@@ -1,4 +1,4 @@
-/* Sart re-occurring elements stylesheet */
+/* Sart re-occurring elements */
 
 @import url(reset.css);
 
@@ -241,7 +241,7 @@ body {
           }
         }
 
-        .parent:hover > ul {
+        .parent:hover > .child {
           background-color: var(--gray-secondary);
           display: block;
           border: 1px solid var(--gray-primary);
@@ -295,16 +295,16 @@ body {
     }
   }
 }
-/* End re-occurring elements stylesheet */
+/* Eind re-occurring elements */
 
-/* Start index.html stylesheet */
+/* Begin index.html */
 .slideshow-container {
   background-color: var(--gray-primary);
   margin-bottom: 30px;
 
   .slideshow-image {
     margin: auto;
-    background-image: url('../images/slideshow/paleisbrug.jpg');
+    background-image: url("../images/slideshow/paleisbrug.jpg");
     height: 300px;
     max-width: 1280px;
 
@@ -408,7 +408,7 @@ article {
     }
   }
 
-  .slider input[type='range'] {
+  .slider input[type="range"] {
     margin: auto;
     width: 900px;
   }
@@ -513,7 +513,7 @@ article {
     padding: 0 50px 0 50px;
     width: inherit;
 
-    .slider input[type='range'] {
+    .slider input[type="range"] {
       width: 100%;
     }
 
@@ -567,116 +567,309 @@ article {
     }
   }
 }
-/* End index.html stylesheet */
+/* Eind index.html */
 
-/* Start listing.html stylesheet */
-#loading {
-  height: 50px;
-  width: 50px;
-  border: 3px solid var(--gray-primary);
-  border-radius: 50%;
-  border-top-color: var(--gray-tertiary);
-  animation: spin 1s linear infinite;
-}
+/* Begin listing.html */
+.listing-title-container {
+  background-color: var(--gray-secondary);
 
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
+  .title-background {
+    margin: auto;
+    background-image: url("../images/slideshow/binnenstad.jpg");
+    height: 300px;
+    width: 1280px;
+    background-repeat: no-repeat;
 
-.listing-main-data-container {
-  margin: auto;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  max-height: 350px;
-  max-width: 970px;
+    .title {
+      margin: 0 auto;
+      padding-top: 175px;
+      max-width: 970px;
 
-  .listing-portrait {
-    background-color: var(--gray-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    width: 480px;
-  }
-
-  .listing-info {
-    .listing-price {
-      background-color: var(--gray-secondary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 125px;
-      width: 460px;
-    }
-
-    .listing-interior {
-      background-color: var(--gray-secondary);
-      margin-top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
-      width: 460px;
+      > h1 {
+        color: white;
+        font-size: 50px;
+      }
     }
   }
 }
 
-.listing-supplementary-data-container {
+.instruction-container {
+  background-color: var(--purple-secondary);
+  height: 75px;
+
+  .instruction-wrapper {
+    margin: auto;
+    padding-top: 15px;
+    max-width: 970px;
+
+    p {
+      color: white;
+      font-size: 18px;
+
+      > a:visited {
+        color: inherit;
+      }
+    }
+
+    .listing-publishing-data {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15px;
+      max-width: 520px;
+    }
+  }
+}
+
+.listing-visuals-container {
   margin: auto;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  max-height: 400px;
   max-width: 970px;
 
-  .listing-streetview {
-    background-color: var(--gray-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
+  .listing-portrait {
+    background-image: url("/images/listing/studentenwoning_onderwijsboulevard_exetieur.jpg");
+    background-size: 100% 100%;
+    height: 400px;
     width: 480px;
+    border-radius: 5px;
   }
 
-  .listing-label {
-    background-color: var(--gray-secondary);
+  .listing-info {
+    .listing-price-wrapper {
+      background-color: var(--gray-secondary);
+      display: flex;
+      max-height: 120px;
+      width: 460px;
+      border-radius: 5px;
+
+      .listing-price {
+        background-color: var(--purple-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        width: 300px;
+        border-radius: 5px 0 0 5px;
+
+        > h1 {
+          color: white;
+          font-size: 50px;
+        }
+      }
+
+      .listing-price-title {
+        background-color: var(--gray-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width: 175px;
+        transition: margin-left 0.5s;
+        border-radius: 0 5px 5px 0;
+
+        p {
+          font-size: 14px;
+        }
+
+        .listing-price-breakdown-title {
+          width: 150px;
+        }
+
+        .listing-price-breakdown {
+          display: none;
+        }
+      }
+
+      .listing-price-title:hover {
+        width: 460px;
+        margin-left: -300px;
+        cursor: pointer;
+
+        .listing-price-breakdown-title {
+          display: none;
+        }
+
+        .listing-price-breakdown {
+          display: block;
+          width: 150px;
+        }
+      }
+    }
+
+    .listing-interior {
+      background-image: url("/images/listing/studentenwoning_onderwijsboulevard_interieur.jpeg");
+      margin-top: 30px;
+      height: 250px;
+      width: 460px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.listing-description-card-container {
+  background-color: var(--gray-secondary);
+  margin: auto;
+  margin-top: 30px;
+  max-height: fit-content;
+  width: 970px;
+  border-radius: 5px;
+
+  .listing-description-card-header {
+    background-color: var(--blue-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 6px 6px 0 0;
+
+    > h2 {
+      color: var(--purple-secondary);
+      font-size: 24px;
+    }
+  }
+
+  .listing-description-wrapper {
+    padding: 15px;
+
+    .listing-description {
+      > p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      > ul {
+        list-style: disc;
+        margin-top: 15px;
+
+        > p {
+          margin-bottom: 30px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        > li {
+          margin-left: 30px;
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.apply-button-wrapper {
+  background-color: var(--purple-primary);
+  margin: auto;
+  margin-top: 30px;
+  max-height: 150px;
+  max-width: 970px;
+  border-radius: 5px;
+
+  .apply-button {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 215px;
+    padding-left: 20px;
+    height: 150px;
+    max-width: 970px;
+
+    .apply-button-img {
+      transition: margin-left 0.5s;
+
+      > img {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  
+    .apply-button-text {
+      margin-left: 15px;
+      transition: margin-left 0.5s;
+
+      > h2 {
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.5s;
+    border: 1px solid var(--purple-primary);
+
+    .apply-button-img {
+      margin-left: 855px;
+    }
+
+    .apply-button-text {
+      margin-left: -900px;
+
+      > h2 {
+        color: var(--purple-primary);
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .listing-main-data-container {
+  .listing-title-container {
+    .title-background {
+      max-width: 100%;
+    }
+  }
+
+  .instruction-container {
+    max-width: 100%;
+  }
+
+  .listing-visuals-container {
+    display: block;
+    max-height: fit-content;
+
     .listing-portrait {
       min-width: 100%;
+      max-width: 100%;
     }
 
     .listing-info {
-      display: none;
+      margin-top: 30px;
+
+      .listing-price-wrapper {
+        min-width: 100%;
+      }
+
+      .listing-interior {
+        min-width: 100%;
+        max-width: 100%;
+      }
     }
   }
 
-  .listing-supplementary-data-container {
-    .listing-streetview {
-      display: none;
-    }
+  .listing-description-card-container {
+    max-width: 100%;
+  }
 
-    .listing-label {
-      width: 45%;
+  .apply-button-wrapper {
+    max-width: 100%;
+
+    &:hover {
+      .apply-button-img {
+        margin-left: 590px;
+      }
+
+      .apply-button-text {
+        margin-left: -650px;
+      }
     }
   }
 }
-/* End listing.html stylesheet *
+/* Eind listing.html *
 
 
-/* Start login.html stylesheet */
-
+/* Begin login.html */
 .login-card {
   background-color: var(--gray-secondary);
   max-width: 465px;
@@ -774,7 +967,7 @@ article {
   max-width: 465px;
   border-radius: 6px 6px 0 0;
 
-  .login-card-header {
+  .register-card-header {
     background-color: var(--blue-primary);
     display: flex;
     justify-content: center;
@@ -788,7 +981,7 @@ article {
     }
   }
 
-  .login-form-container {
+  .register-form-container {
     height: 420px;
     padding: 20px;
 
@@ -799,7 +992,7 @@ article {
       max-width: 30px;
     }
 
-    .login-form-desciption {
+    .register-form-description {
       margin-top: 30px;
 
       > h3 {
@@ -854,9 +1047,9 @@ article {
     min-width: 100%;
   }
 }
-/* End login.html stylesheets */
+/* Eind login.html */
 
-/* Start about.html stylesheet */
+/* Begin about.html */
 .faq-section-container {
   margin: auto;
   display: flex;
@@ -1029,9 +1222,9 @@ article {
     }
   }
 }
-/* End about.html stylesheet */
+/* Eind about.html */
 
-/* Start contact.html stylesheet */
+/* Begin contact.html */
 .contact-card {
   background-color: var(--gray-secondary);
   margin: auto;
@@ -1142,4 +1335,4 @@ article {
     }
   }
 }
-/* End contact.html stylesheet */
+/* Eind contact.html */
