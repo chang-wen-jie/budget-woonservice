@@ -1,5 +1,4 @@
 /* Sart re-occurring elements */
-
 @import url(reset.css);
 
 :root {
@@ -26,7 +25,6 @@ body {
   max-height: 110px;
   justify-content: space-between;
   border-bottom: var(--gray-primary) 1px solid;
-
   .main-navbar {
     margin: auto;
     display: flex;
@@ -35,11 +33,9 @@ body {
     .navigation-menu {
       align-items: center;
       padding-top: 25px;
-
       > li {
         display: inline;
         padding-right: 25px;
-
         > a {
           text-decoration: none;
           color: var(--gray-tertiary);
@@ -59,7 +55,6 @@ body {
       .dropdown {
         float: right;
         padding-top: 25px;
-
         > span {
           font-size: 14px;
           font-weight: bold;
@@ -72,7 +67,6 @@ body {
           max-width: fit-content;
           padding: 12px 16px;
           border: 1px solid blue;
-
           > p {
             color: blue;
             font-size: 15px;
@@ -105,7 +99,6 @@ body {
   background-color: var(--purple-secondary);
   margin-top: 50px;
   height: 225px;
-
   .footer-block-group {
     margin: auto;
     display: flex;
@@ -113,12 +106,10 @@ body {
     height: 175px;
     width: 970px;
     border-bottom: 1px solid white;
-
     .footer-block {
       color: white;
       margin-top: 50px;
       max-width: fit-content;
-
       .footer-block-title {
         color: white;
         font-size: 22px;
@@ -131,7 +122,6 @@ body {
 
       > ul {
         margin-top: 10px;
-
         > li a {
           color: white;
           text-decoration: none;
@@ -150,7 +140,6 @@ body {
   margin: auto;
   margin-top: 30px;
   width: 970px;
-
   .title {
     > h1 {
       color: var(--purple-secondary);
@@ -165,7 +154,6 @@ body {
   margin: auto;
   margin-top: 50px;
   max-width: 970px;
-
   > p {
     padding: 25px;
     line-height: 25px;
@@ -187,7 +175,6 @@ body {
     display: flex;
     align-items: center;
     max-width: 100%;
-
     .main-navbar {
       display: none;
     }
@@ -195,19 +182,15 @@ body {
     .secondary-navbar {
       display: flex;
       width: 100%;
-
       .navigation-container {
         max-height: 100%;
-
         .parent {
           width: 100%;
-
           .hamburger-menu {
             margin: 25px;
             padding: 10px;
             border: 1px solid white;
             border-radius: 5px;
-
             > h1 {
               color: white;
               font-size: 39px;
@@ -220,7 +203,6 @@ body {
             position: absolute;
             text-align: left;
             width: 100%;
-
             > li {
               > a {
                 padding: 15px;
@@ -253,7 +235,6 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 80%;
-
         > h1 {
           color: white;
           font-size: 26px;
@@ -272,7 +253,6 @@ body {
 
   main {
     padding: 0 25px 0 25px;
-
     .title-container {
       max-width: 100%;
     }
@@ -283,15 +263,12 @@ body {
     }
   }
 
-  .main-footer {
-    .footer-block-group {
-      max-width: 100%;
-
-      .footer-block {
-        padding: 0 25px 0 25px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
+  .footer-block-group {
+    max-width: 100%;
+    .footer-block {
+      padding: 0 25px 0 25px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 }
@@ -301,13 +278,11 @@ body {
 .slideshow-container {
   background-color: var(--gray-primary);
   margin-bottom: 30px;
-
   .slideshow-image {
     margin: auto;
     background-image: url("../images/slideshow/paleisbrug.jpg");
     height: 300px;
     max-width: 1280px;
-
     .slideshow-text {
       margin: 0 auto;
       padding-top: 175px;
@@ -337,7 +312,6 @@ article {
     padding: 20px;
     max-height: 300px;
     max-width: 930px;
-
     > h2 {
       color: var(--purple-primary);
       font-size: 18px;
@@ -359,7 +333,6 @@ article {
   justify-content: space-between;
   align-items: center;
   max-width: 900px;
-
   > h1 {
     font-size: 20px;
   }
@@ -372,7 +345,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-
     > a {
       color: var(--purple-secondary);
       font-size: 28px;
@@ -388,12 +360,10 @@ article {
   margin-bottom: 30px;
   height: 160px;
   width: 970px;
-
   .slider-title {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-
     > h2 {
       font-size: 20px;
     }
@@ -402,7 +372,6 @@ article {
   .slider {
     margin: auto;
     display: flex;
-
     :hover {
       cursor: pointer;
     }
@@ -420,7 +389,6 @@ article {
     width: 900px;
     display: flex;
     justify-content: space-between;
-
     .max-value {
       order: 2;
     }
@@ -434,12 +402,10 @@ article {
   max-width: 970px;
   row-gap: 30px;
   column-gap: 30px;
-
   .listing {
     background-color: var(--gray-secondary);
     height: 460px;
     max-width: 220px;
-
     > a {
       text-decoration: none;
     }
@@ -450,10 +416,8 @@ article {
 
     .listing-info {
       padding: 15px;
-
       .listing-location {
         white-space: nowrap;
-
         > h2 {
           max-height: 100px;
           text-overflow: ellipsis;
@@ -471,7 +435,6 @@ article {
       .listing-pricing {
         display: flex;
         justify-content: space-between;
-
         > img {
           max-height: 30px;
           max-width: 30px;
@@ -495,7 +458,6 @@ article {
 @media screen and (max-width: 768px) {
   .slideshow-container {
     padding: 0;
-
     .slideshow-image {
       max-width: 100%;
     }
@@ -512,7 +474,6 @@ article {
   .slider-container {
     padding: 0 50px 0 50px;
     width: inherit;
-
     .slider input[type="range"] {
       width: 100%;
     }
@@ -525,15 +486,11 @@ article {
   .listing-container {
     display: flex;
     justify-content: space-evenly;
-
     .listing {
       min-width: 300px;
       height: fit-content;
-
-      > a {
-        > img {
-          width: 100%;
-        }
+      > img {
+        width: 100%;
       }
 
       .listing-info {
@@ -572,19 +529,16 @@ article {
 /* Begin listing.html */
 .listing-title-container {
   background-color: var(--gray-secondary);
-
   .title-background {
     margin: auto;
     background-image: url("../images/slideshow/binnenstad.jpg");
     height: 300px;
     width: 1280px;
     background-repeat: no-repeat;
-
     .title {
       margin: 0 auto;
       padding-top: 175px;
       max-width: 970px;
-
       > h1 {
         color: white;
         font-size: 50px;
@@ -596,12 +550,10 @@ article {
 .instruction-container {
   background-color: var(--purple-secondary);
   height: 75px;
-
   .instruction-wrapper {
     margin: auto;
     padding-top: 15px;
     max-width: 970px;
-
     p {
       color: white;
       font-size: 18px;
@@ -627,7 +579,6 @@ article {
   justify-content: space-between;
   max-height: 400px;
   max-width: 970px;
-
   .listing-portrait {
     background-image: url("/images/listing/studentenwoning_onderwijsboulevard_exetieur.jpg");
     background-size: 100% 100%;
@@ -643,7 +594,6 @@ article {
       max-height: 120px;
       width: 460px;
       border-radius: 5px;
-
       .listing-price {
         background-color: var(--purple-primary);
         display: flex;
@@ -652,7 +602,6 @@ article {
         height: 120px;
         width: 300px;
         border-radius: 5px 0 0 5px;
-
         > h1 {
           color: white;
           font-size: 50px;
@@ -668,7 +617,6 @@ article {
         width: 175px;
         transition: margin-left 0.5s;
         border-radius: 0 5px 5px 0;
-
         p {
           font-size: 14px;
         }
@@ -686,7 +634,6 @@ article {
         width: 460px;
         margin-left: -300px;
         cursor: pointer;
-
         .listing-price-breakdown-title {
           display: none;
         }
@@ -715,7 +662,6 @@ article {
   max-height: fit-content;
   width: 970px;
   border-radius: 5px;
-
   .listing-description-card-header {
     background-color: var(--blue-primary);
     display: flex;
@@ -723,7 +669,6 @@ article {
     align-items: center;
     height: 50px;
     border-radius: 6px 6px 0 0;
-
     > h2 {
       color: var(--purple-secondary);
       font-size: 24px;
@@ -732,7 +677,6 @@ article {
 
   .listing-description-wrapper {
     padding: 15px;
-
     .listing-description {
       > p {
         font-size: 14px;
@@ -742,7 +686,6 @@ article {
       > ul {
         list-style: disc;
         margin-top: 15px;
-
         > p {
           margin-bottom: 30px;
           font-size: 14px;
@@ -766,27 +709,23 @@ article {
   max-height: 150px;
   max-width: 970px;
   border-radius: 5px;
-
   .apply-button {
     display: flex;
     align-items: center;
     padding-left: 20px;
     height: 150px;
     max-width: 970px;
-
     .apply-button-img {
       transition: margin-left 0.5s;
-
       > img {
         height: 60px;
         width: 60px;
       }
     }
-  
+
     .apply-button-text {
       margin-left: 15px;
       transition: margin-left 0.5s;
-
       > h2 {
         color: white;
         font-size: 20px;
@@ -799,14 +738,12 @@ article {
     background-color: white;
     transition: background-color 0.5s;
     border: 1px solid var(--purple-primary);
-
     .apply-button-img {
       margin-left: 855px;
     }
 
     .apply-button-text {
       margin-left: -900px;
-
       > h2 {
         color: var(--purple-primary);
       }
@@ -828,7 +765,6 @@ article {
   .listing-visuals-container {
     display: block;
     max-height: fit-content;
-
     .listing-portrait {
       min-width: 100%;
       max-width: 100%;
@@ -836,7 +772,6 @@ article {
 
     .listing-info {
       margin-top: 30px;
-
       .listing-price-wrapper {
         min-width: 100%;
       }
@@ -854,7 +789,6 @@ article {
 
   .apply-button-wrapper {
     max-width: 100%;
-
     &:hover {
       .apply-button-img {
         margin-left: 590px;
@@ -874,7 +808,6 @@ article {
   background-color: var(--gray-secondary);
   max-width: 465px;
   border-radius: 6px 6px 0 0;
-
   .login-card-header {
     background-color: var(--blue-primary);
     display: flex;
@@ -882,7 +815,6 @@ article {
     align-items: center;
     height: 50px;
     border-radius: 6px 6px 0 0;
-
     > h2 {
       color: var(--purple-secondary);
       font-size: 24px;
@@ -891,7 +823,6 @@ article {
 
   .login-form-container {
     padding: 20px;
-
     > img {
       display: flex;
       margin: auto;
@@ -901,7 +832,6 @@ article {
 
     .login-form-desciption {
       margin-top: 30px;
-
       > h3 {
         font-weight: bold;
       }
@@ -915,7 +845,6 @@ article {
       .username-field {
         display: flex;
         justify-content: space-between;
-
         > input {
           margin-right: 40px;
           height: 25px;
@@ -927,7 +856,6 @@ article {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-
         > input {
           margin-right: 40px;
           height: 25px;
@@ -941,7 +869,6 @@ article {
 
       .login-button {
         margin-top: 50px;
-
         > input {
           background-color: var(--purple-primary);
           color: white;
@@ -966,7 +893,6 @@ article {
   max-height: 410px;
   max-width: 465px;
   border-radius: 6px 6px 0 0;
-
   .register-card-header {
     background-color: var(--blue-primary);
     display: flex;
@@ -974,7 +900,6 @@ article {
     align-items: center;
     height: 50px;
     border-radius: 6px 6px 0 0;
-
     > h2 {
       color: var(--purple-secondary);
       font-size: 24px;
@@ -984,7 +909,6 @@ article {
   .register-form-container {
     height: 420px;
     padding: 20px;
-
     > img {
       display: flex;
       margin: auto;
@@ -994,7 +918,6 @@ article {
 
     .register-form-description {
       margin-top: 30px;
-
       > h3 {
         font-weight: bold;
       }
@@ -1006,7 +929,6 @@ article {
 
     .register-button {
       margin-top: 50px;
-
       > input {
         background-color: var(--purple-primary);
         color: white;
@@ -1029,14 +951,12 @@ article {
   .login-card {
     max-height: fit-content;
     max-width: 100%;
-
-    .login-form-container .login-form {
-      .username-field > input {
-        max-width: 50%;
-      }
-
-      .password-field > input {
-        max-width: 50%;
+    .username-field,
+    .password-field {
+      display: flex;
+      flex-direction: column;
+      > input {
+        min-width: 75%; /* Take up full width */
       }
     }
   }
@@ -1055,13 +975,10 @@ article {
   display: flex;
   justify-content: space-between;
   max-width: 970px;
-
   .card-header {
     background-color: var(--blue-primary);
     text-align: center;
     padding: 20px;
-    border-radius: 6px 6px 0 0;
-
     > h2 {
       color: var(--purple-secondary);
       font-size: 24px;
@@ -1074,16 +991,10 @@ article {
     height: 530px;
     width: 225px;
     border-radius: 6px 6px 0 0;
-
-    .faq-container {
-      > ul {
-        > li {
-          padding-bottom: 6px;
-
-          > a {
-            line-height: 25px;
-          }
-        }
+    > li {
+      padding-bottom: 6px;
+      > a {
+        line-height: 25px;
       }
     }
   }
@@ -1091,10 +1002,8 @@ article {
   .faq-container {
     padding: 25px;
     margin-left: 15px;
-
     > ul {
       list-style: square;
-
       > li a {
         color: var(--gray-tertiary);
         text-decoration: none;
@@ -1106,7 +1015,6 @@ article {
   .faq-section {
     margin-top: 25px;
     max-width: 710px;
-
     .search-bar-container {
       background-color: var(--purple-secondary);
       display: flex;
@@ -1115,7 +1023,6 @@ article {
       width: 710px;
       height: 55px;
       border-radius: 5px;
-
       > img {
         max-height: 30px;
         max-width: 30px;
@@ -1127,7 +1034,6 @@ article {
           width: 500px;
           font-size: 20px;
         }
-
         > input::placeholder {
           font-size: 20px;
         }
@@ -1149,7 +1055,6 @@ article {
     .faq-card-container {
       display: flex;
       justify-content: space-between;
-
       .faq-card {
         background-color: var(--gray-secondary);
         margin-top: 25px;
@@ -1166,11 +1071,9 @@ article {
   margin: auto;
   margin-top: 25px;
   max-width: 970px;
-
   .more-faq {
     padding: 20px;
     line-height: 35px;
-
     > h2 {
       color: var(--purple-primary);
       font-size: 22px;
@@ -1186,7 +1089,6 @@ article {
   .faq-section-container {
     display: block;
     width: 100%;
-
     .tips-container {
       height: fit-content;
       width: 100%;
@@ -1196,15 +1098,12 @@ article {
       min-width: 100%;
       .search-bar-container {
         width: 100%;
-
         .search-bar {
           width: 55%;
-
           > input {
             width: 100%;
           }
         }
-
         > input {
           max-width: 100%;
         }
@@ -1213,7 +1112,6 @@ article {
       .faq-card-container {
         display: flex;
         flex-direction: column;
-
         .faq-card {
           min-width: 100%;
           height: fit-content;
@@ -1230,7 +1128,6 @@ article {
   margin: auto;
   width: 500px;
   border-radius: 6px 6px 0 0;
-
   .contact-card-header {
     background-color: var(--blue-primary);
     display: flex;
@@ -1238,7 +1135,6 @@ article {
     align-items: center;
     height: 50px;
     border-radius: 6px 6px 0 0;
-
     > h2 {
       color: var(--purple-secondary);
       font-size: 24px;
@@ -1247,7 +1143,6 @@ article {
 
   .contact-form-container {
     padding: 20px;
-
     > img {
       display: flex;
       margin: auto;
@@ -1255,61 +1150,55 @@ article {
       max-width: 30px;
     }
 
-    .contact-form {
-      .name-field {
-        display: flex;
-        justify-content: space-between;
+    .name-field {
+      display: flex;
+      justify-content: space-between;
+      > input {
+        margin-right: 40px;
+        height: 25px;
+        width: 220px;
+      }
+    }
 
-        > input {
-          margin-right: 40px;
-          height: 25px;
-          width: 220px;
-        }
+    .email-field {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      > input {
+        margin-right: 40px;
+        height: 25px;
+        width: 220px;
+      }
+    }
+
+    .message-field {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      > textarea {
+        margin-right: 40px;
+      }
+    }
+
+    .contact-me-field {
+      margin-top: 15px;
+    }
+
+    .contact-button {
+      margin-top: 50px;
+      > input {
+        background-color: var(--purple-primary);
+        color: white;
+        height: 40px;
+        width: 125px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
       }
 
-      .email-field {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-
-        > input {
-          margin-right: 40px;
-          height: 25px;
-          width: 220px;
-        }
-      }
-
-      .message-field {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-
-        > textarea {
-          margin-right: 40px;
-        }
-      }
-
-      .contact-me-field {
-        margin-top: 15px;
-      }
-
-      .contact-button {
-        margin-top: 50px;
-
-        > input {
-          background-color: var(--purple-primary);
-          color: white;
-          height: 40px;
-          width: 125px;
-          font-size: 16px;
-          border: none;
-          border-radius: 10px;
-        }
-
-        > input:hover {
-          cursor: pointer;
-          color: var(--gray-primary);
-        }
+      > input:hover {
+        cursor: pointer;
+        color: var(--gray-primary);
       }
     }
   }
@@ -1319,18 +1208,13 @@ article {
   .contact-card {
     max-height: fit-content;
     width: 100%;
-
-    .contact-form-container .contact-form {
-      .name-field > input {
-        max-width: 50%;
-      }
-
-      .email-field > input {
-        max-width: 50%;
-      }
-
-      .message-field > textarea {
-        max-width: 50%;
+    .name-field,
+    .email-field,
+    .message-field {
+      display: flex;
+      flex-direction: column;
+      > input {
+        min-width: 93%;
       }
     }
   }
