@@ -1,4 +1,4 @@
-/* Sart re-occurring elements */
+/* Sart main elements */
 @import url(reset.css);
 
 :root {
@@ -272,7 +272,7 @@ body {
     }
   }
 }
-/* Eind re-occurring elements */
+/* Eind main elements */
 
 /* Begin index.html */
 .slideshow-container {
